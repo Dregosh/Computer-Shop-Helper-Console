@@ -4,7 +4,7 @@ import model.Customer;
 import model.Order;
 import util.HibernateUtil;
 
-import javax.persistence.PreRemove;
+import jakarta.persistence.PreRemove;
 import java.util.List;
 
 public class CustomerListener {

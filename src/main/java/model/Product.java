@@ -1,8 +1,7 @@
 package model;
 
-import com.sun.istack.NotNull;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,18 +14,18 @@ public class Product {
     private Long id;
 
     @Column
-    @NotNull
+//    @NotNull
     private String name;
 
     @Enumerated(EnumType.STRING)
-    @NotNull
+//    @NotNull
     private ProductType type;
 
     @Column
     private Double price;
 
     @Column
-    @NotNull
+//    @NotNull
     private Integer amount;
 
     @OneToMany(mappedBy = "product")

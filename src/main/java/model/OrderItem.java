@@ -1,6 +1,6 @@
 package model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity(name = "order_items")
 public class OrderItem {

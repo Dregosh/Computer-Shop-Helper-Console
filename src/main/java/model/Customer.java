@@ -1,8 +1,7 @@
 package model;
 
-import com.sun.istack.NotNull;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,23 +15,23 @@ public class Customer {
     private Long id;
 
     @Column(name = "last_name")
-    @NotNull
+//    @NotNull
     private String lastName;
 
     @Column(name = "first_name")
-    @NotNull
+//    @NotNull
     private String firstName;
 
     @Column(name = "address_street")
-    @NotNull
+//    @NotNull
     private String addressStreet;
 
     @Column(name = "address_postal_code")
-    @NotNull
+//    @NotNull
     private String addressPostalCode;
 
     @Column(name = "address_city")
-    @NotNull
+//    @NotNull
     private String addressCity;
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
